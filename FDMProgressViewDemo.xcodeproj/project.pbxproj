@@ -8,22 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		187D44EE25AC5BF30008F6A4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187D44ED25AC5BF30008F6A4 /* AppDelegate.swift */; };
-		187D44F025AC5BF30008F6A4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187D44EF25AC5BF30008F6A4 /* SceneDelegate.swift */; };
 		187D44F225AC5BF30008F6A4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187D44F125AC5BF30008F6A4 /* ViewController.swift */; };
 		187D44F525AC5BF30008F6A4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 187D44F325AC5BF30008F6A4 /* Main.storyboard */; };
 		187D44F725AC5BF50008F6A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 187D44F625AC5BF50008F6A4 /* Assets.xcassets */; };
 		187D44FA25AC5BF50008F6A4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 187D44F825AC5BF50008F6A4 /* LaunchScreen.storyboard */; };
+		187D450625AC5C310008F6A4 /* FDMProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187D450525AC5C310008F6A4 /* FDMProgressView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		187D44EA25AC5BF30008F6A4 /* FDMProgressViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FDMProgressViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		187D44ED25AC5BF30008F6A4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		187D44EF25AC5BF30008F6A4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		187D44F125AC5BF30008F6A4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		187D44F425AC5BF30008F6A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		187D44F625AC5BF50008F6A4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		187D44F925AC5BF50008F6A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		187D44FB25AC5BF50008F6A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		187D450525AC5C310008F6A4 /* FDMProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FDMProgressView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,8 +56,8 @@
 		187D44EC25AC5BF30008F6A4 /* FDMProgressViewDemo */ = {
 			isa = PBXGroup;
 			children = (
+				187D450425AC5C310008F6A4 /* FDMProgressView */,
 				187D44ED25AC5BF30008F6A4 /* AppDelegate.swift */,
-				187D44EF25AC5BF30008F6A4 /* SceneDelegate.swift */,
 				187D44F125AC5BF30008F6A4 /* ViewController.swift */,
 				187D44F325AC5BF30008F6A4 /* Main.storyboard */,
 				187D44F625AC5BF50008F6A4 /* Assets.xcassets */,
@@ -65,6 +65,14 @@
 				187D44FB25AC5BF50008F6A4 /* Info.plist */,
 			);
 			path = FDMProgressViewDemo;
+			sourceTree = "<group>";
+		};
+		187D450425AC5C310008F6A4 /* FDMProgressView */ = {
+			isa = PBXGroup;
+			children = (
+				187D450525AC5C310008F6A4 /* FDMProgressView.swift */,
+			);
+			path = FDMProgressView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,9 +145,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				187D450625AC5C310008F6A4 /* FDMProgressView.swift in Sources */,
 				187D44F225AC5BF30008F6A4 /* ViewController.swift in Sources */,
 				187D44EE25AC5BF30008F6A4 /* AppDelegate.swift in Sources */,
-				187D44F025AC5BF30008F6A4 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,6 +297,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 494CM2XCYA;
 				INFOPLIST_FILE = FDMProgressViewDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -308,6 +317,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 494CM2XCYA;
 				INFOPLIST_FILE = FDMProgressViewDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
