@@ -13,6 +13,7 @@
 		187D44F725AC5BF50008F6A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 187D44F625AC5BF50008F6A4 /* Assets.xcassets */; };
 		187D44FA25AC5BF50008F6A4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 187D44F825AC5BF50008F6A4 /* LaunchScreen.storyboard */; };
 		187D450625AC5C310008F6A4 /* FDMProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187D450525AC5C310008F6A4 /* FDMProgressView.swift */; };
+		F999320DC395B41CF9E5861C /* Pods_FDMProgressViewDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3858B0E35B0C683FA2795312 /* Pods_FDMProgressViewDemo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,9 @@
 		187D44F925AC5BF50008F6A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		187D44FB25AC5BF50008F6A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		187D450525AC5C310008F6A4 /* FDMProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FDMProgressView.swift; sourceTree = "<group>"; };
+		3858B0E35B0C683FA2795312 /* Pods_FDMProgressViewDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FDMProgressViewDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		41BE8D9F6EED91FA3096D354 /* Pods-FDMProgressViewDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FDMProgressViewDemo.debug.xcconfig"; path = "Target Support Files/Pods-FDMProgressViewDemo/Pods-FDMProgressViewDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		C8EE674F2EF9AD7393A1FCFC /* Pods-FDMProgressViewDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FDMProgressViewDemo.release.xcconfig"; path = "Target Support Files/Pods-FDMProgressViewDemo/Pods-FDMProgressViewDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F999320DC395B41CF9E5861C /* Pods_FDMProgressViewDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,8 @@
 			children = (
 				187D44EC25AC5BF30008F6A4 /* FDMProgressViewDemo */,
 				187D44EB25AC5BF30008F6A4 /* Products */,
+				A01C058EA8123EEB3150EC57 /* Pods */,
+				44E25B5A072AD80A863AD964 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -75,6 +82,24 @@
 			path = FDMProgressView;
 			sourceTree = "<group>";
 		};
+		44E25B5A072AD80A863AD964 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3858B0E35B0C683FA2795312 /* Pods_FDMProgressViewDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A01C058EA8123EEB3150EC57 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				41BE8D9F6EED91FA3096D354 /* Pods-FDMProgressViewDemo.debug.xcconfig */,
+				C8EE674F2EF9AD7393A1FCFC /* Pods-FDMProgressViewDemo.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -82,9 +107,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 187D44FE25AC5BF50008F6A4 /* Build configuration list for PBXNativeTarget "FDMProgressViewDemo" */;
 			buildPhases = (
+				A5CAAFDCA64EF258B9252F98 /* [CP] Check Pods Manifest.lock */,
 				187D44E625AC5BF30008F6A4 /* Sources */,
 				187D44E725AC5BF30008F6A4 /* Frameworks */,
 				187D44E825AC5BF30008F6A4 /* Resources */,
+				67F201901A14A706716C6D6A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -139,6 +166,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		67F201901A14A706716C6D6A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FDMProgressViewDemo/Pods-FDMProgressViewDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FDMProgressViewDemo/Pods-FDMProgressViewDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FDMProgressViewDemo/Pods-FDMProgressViewDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A5CAAFDCA64EF258B9252F98 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FDMProgressViewDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		187D44E625AC5BF30008F6A4 /* Sources */ = {
@@ -291,6 +360,7 @@
 		};
 		187D44FF25AC5BF50008F6A4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41BE8D9F6EED91FA3096D354 /* Pods-FDMProgressViewDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -302,7 +372,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = fdm.progressView.demo.FDMProgressViewDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = progress.fdm;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -311,6 +381,7 @@
 		};
 		187D450025AC5BF50008F6A4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C8EE674F2EF9AD7393A1FCFC /* Pods-FDMProgressViewDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -322,7 +393,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = fdm.progressView.demo.FDMProgressViewDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = progress.fdm;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

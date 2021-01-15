@@ -1,6 +1,5 @@
 //
 //  FDMProgressView.swift
-//  SXReader_2020
 //
 //  Created by 发抖喵 on 2021/1/7.
 //
@@ -24,9 +23,6 @@ class FDMProgressView: UIView {
     
     weak var delegate: FDMProgressViewDelegate?
     
-    /// 进度条高度
-    var progressHeight: CGFloat = 8 { didSet { resetProgressView() } }
-    
     /// 拖拽速度
     var dragSpeed: CGFloat = 1.0
     
@@ -36,8 +32,11 @@ class FDMProgressView: UIView {
     /// 当前加载进度
     var loadValue: CGFloat = 0
     
+    /// 进度条高度
+    var progressHeight: CGFloat = 8 { didSet { resetProgressView() } }
+    
     /// 拖动控制子视图Size - 默认小圆点Size
-    var controlSize = CGSize(width: 16, height: 16) { didSet { setSubControlViewCenter() } }
+    var controlSize: CGSize = .init(width: 16, height: 16) { didSet { setSubControlViewCenter() } }
     
     /// 总进度颜色
     var totalProgressColor: UIColor? { didSet { totalProgressView.backgroundColor = totalProgressColor } }
@@ -90,6 +89,7 @@ extension FDMProgressView {
     /**
      设置当前播放进度值
      
+     - 建议使用此方法设置播放进度
      - parameter value: 播放进度
      */
     func setCurrentProgressValue(_ value: CGFloat) {
@@ -109,6 +109,7 @@ extension FDMProgressView {
     /**
      设置加载进度值
      
+     - 建议使用此方法设置加载进度
      - parameter value: 加载进度
      */
     func setLoadProgressValue(_ value: CGFloat) {

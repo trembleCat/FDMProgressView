@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SnapKit
 
 //MARK: - 进度条
 class ViewController: UIViewController {
@@ -58,7 +59,13 @@ extension ViewController {
         progressView.delegate = self
         progressView.progressHeight = 5
         progressView.currentProgressColor = .orange
-        progressView.frame = CGRect(x: 15, y: 150, width: view.bounds.width - 30, height: 25)
+//        progressView.frame = CGRect(x: 15, y: 150, width: view.bounds.width - 30, height: 25)
+        progressView.snp.makeConstraints { (make) in
+            make.left.equalToSuperview().offset(15)
+            make.right.equalToSuperview().offset(-15)
+            make.top.equalTo(150)
+            make.height.equalTo(25)
+        }
         
         /* 创建进度条拖动View */
         setControlSubView()

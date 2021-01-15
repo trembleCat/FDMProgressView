@@ -1,18 +1,16 @@
-# FDMProgressView
->Swift - ProgressView
->Swift - 进度条小工具
 
-> ----------
+># [FDMProgressView](https://github.com/trembleCat/FDMProgressView.git)
+
 > **功能**
 >* 支持修改拖拽速度。
 >* 支持添加自定义拖动控件。
->* 支持动态修改拖动控件大小。
->* 支持动态修改进度条颜色与大小。
->* 支持播放进度，加载进度等显示。
+>* 支持显示播放进度与加载进度。
+>* 支持动态修改进度条与拖动控件的颜色与大小。
 
-> **注意** -【ProgressView】的高度即可触控范围，修改内部【progressHeight】属性并不会修改触控范围。
+> **注意**
+>* 初始化【ProgressView】时的高度即为拖动控件触控范围。
+>* 修改【progressHeight】属性并不能修改触控范围。
 
-> ----------
 >```swift
 >  /*可用属性*/
 >  var progressHeight: CGFloat    // 进度条高度
@@ -25,7 +23,6 @@
 >  var currentProgressColor: UIColor?    // 当前进度颜色
 >```
 
-> ----------
 >```swift
 >  /*可用方法*/
 >
@@ -47,7 +44,6 @@
 >  func resetProgressView()
 >```
 
-> ----------
 > ```swift
 >  /* 代理方法 - FDMProgressViewDelegate */
 >
